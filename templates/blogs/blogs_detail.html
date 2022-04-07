@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+
+{% block title %} {{blog.title}} {% endblock title %}
+
+{% block content %}
+    <div class="book_dtail">
+        <h2><a href="">{{blog.title}}</a></h2>
+        <p>Created at: {{blog.created_at}}</p>
+        <p>{{blog.content}}</p>
+        <p>Author: {{blog.author}} </p>
+    </div>
+{% endblock content %}
