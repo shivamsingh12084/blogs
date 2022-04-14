@@ -4,7 +4,7 @@
 
 {% block content %}
     {% for blog in blog_list %}
-        <li><a href="{% url 'blog_detail' blog.pk %}" >{{blog.title}}</a></li>
+        <li><a href="{{ blog.get_absolute_url }}" >{{blog.title}}</a></li>
         <li>{{blog.created_at}}</li>
         <p></p>
         
